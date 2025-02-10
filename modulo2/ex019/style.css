@@ -1,0 +1,43 @@
+@charset "UTF8";
+
+body {
+    font: normal bold 1em helvetica, sans-serif;
+    background-color: #3AB663;
+}
+
+img {
+    width: 900px;
+}
+
+h1#principal {
+    background-color: #115029;
+}
+
+h1 {
+    background-color: #22E061;
+    color: black;
+}
+
+p {
+    text-indent: 10px;
+}
+
+a {
+    color: #333B36;
+}
+
+.basico {
+    background-color: #18723A;
+
+}
+
+.intermediario {
+    background-color: #2DD86F;
+
+}
+
+.avançado{
+    background-color: #2FE073;
+
+
+}

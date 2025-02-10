@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens flexiveis</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/EUPP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/LPM.png" type="image/png">
+        <img src="imagem/SSPG.png" alt="foto grande">
+    </picture>
+    <h1>audio mp3</h1>
+    <audio src="midia/pikasorvete.mp3" controls autoplay></audio>
+    <h2>audio para outros formatos</h2>
+
+    <audio preload="metadata" controls autoplay> <!--loop apos auto play, nao use auto pois seu site so carrega se carregar o audio, porisso use metadate que carrega so titulo e umas informaçoes-->
+        <source src="midia/traveco.mp3" type="audio/mpeg">
+        <source src="midia/traveco.ogg" type="audio/ogg">
+        <source src="midia/pikasorvete.wav" type="audio/wav">
+        <p>infelizmente seu navegador não suporta reproduzir audios.
+            <a href="midia/traveco.mp3">clique para baixar arquivo</a>
+            <a href="midia/pikasorvete.mp3">clique para baixar arquivo</a>
+        </p>
+    </audio>
+
+    <h1>video hospedado localmente</h1>
+    <video src="midia2/12254749 3840 2160 24Fps.mp4" width="500" controls></video>
+
+    <h2>outra forma de botar video</h2>
+    <video width="500" controls> <!--entre width e controls pode adicionar poster que age como papel de parede enquanto o video não for reproduzido-->
+        <source src="midia2/12254749 3840 2160 24Fps.mp4" type="video/mp4">
+        <p>seu navegador não é compativel com o formato de video mp4</p>
+    </video>
+    <h1>video hospedado fora do site</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/z4t9LLq1Nk0?si=Xmw_I56RsXzk8s62" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

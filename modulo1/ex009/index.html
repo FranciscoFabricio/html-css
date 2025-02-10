@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>listas no HTML</title>
+</head>
+<body>
+    <h1>lista ordenada e não ordenada</h1>
+    <h2>lista ordenada</h2>
+        <ol type="1" start="1"> <!--start começa e type usa para dizer o tipo de lista, 1 de numero-->
+            <li>1</li>          
+            <li>2</li>
+            <li>3</li>
+                <ol type="A" start="4">   <!--A de alfabeto maiusculo-->
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            <ol type="a" start="7">        <!--a de alfabeto minusculo-->
+                <li>7</li>
+                <li>8</li>
+            <ol type="I" start="9">          <!--I de alfabeto maiusculo romano-->
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+            <ol type="i" start="12">         <!--i de alfabeto romano minusculo-->
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+           
+</ol>                      <!--interresante é que a continuação da lista no start é influenciado pelo tipo de lista -->
+
+
+<h2>lista não ordenada</h2>
+<ul type="disc" start="1"> <!--disc=padrão-->
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<ul type="circle" start="1"> <!--circle=circulo-->
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <ul type="square" start="1"> <!--square=quadrado-->
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+</ul>
+
+<h1>atividade</h1> <!--lista de obras favoritas-->
+
+<ol type="I" start="1">  
+    <h2>supremo pika</h2> 
+     <ol type="1" start="1">
+        <li>alquimia das almas</li>
+        <li>train to busan</li></ol>
+   <h2>pikas</h2> 
+    <li>predador 1 do arnold</li>
+    <li>all of us are dead</li>
+    <li>extracurricular</li>
+    <h3>mais ou menos pika</h3>
+    <ul type="circle" start="2">         
+        <li>sweet home 1 temporada</li>
+        <li>#alive</li>
+        <li>arcane</li>
+       <h4>legalzinho</h4>
+        <ul type="square" start="3">         
+            <li>teen wolf</li>
+            <li>cobra kai</li>
+            <li>como sobreviver a um ataque zumbi</li> <!--mensão honrosa zumbilandia-->
+          
+</ul>
+</ol>
+   <h2>lista de definiçoes</h2>
+   <h3>dt é termo e dd definiçao</h3>
+<dl>
+    <dt>pt-br</dt>
+    <dd>abreviação da linguagem portugues do brasil</dd></dl>
+
+</body>
+</html>

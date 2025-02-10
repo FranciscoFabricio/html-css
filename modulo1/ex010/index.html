@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <h1>como criar redirecionamentos</h1>
+    <a href="https://www.youtube.com/"> redirecionamento pro youtube</a> <!--"a" de ancora--> <br>
+    <a href="https://ge.globo.com/ce/" hreflang="pt-br">globo esporte</a> <!--o flang é usado para dizer o idioma pro google traduzir--> <br>
+    <a href="https://www.youtube.com/" target="_blank">youtube em nova janela</a> <!--abre o link em nova janela em branco, muito util--> <br>
+    <a href="https://ge.globo.com/ce/" target="_parent">globo esporte com tag parent</a> <!--parecido com top--> <br>
+    <a href="file:///C:/Users/MASTER/Documents/estudo/html-css/exercicios/ex010/index.html" target="_self">meu site piroca</a> <!--abre a janela no local atual sobrepondo nosso site--> <br>
+    <a href="" target="_top"></a> <!--desfaz todos os flames e abre no navegador completo-->
+    <h2>mais ultilizados</h2>
+    <a href="https://www.youtube.com/"> redirecionamento pro youtube</a> <!--"a" de ancora--> <br>
+    <a href="https://www.youtube.com/" target="_blank">youtube em nova janela</a> <!--abre o link em nova janela em branco, muito util--> <br>
+    <a href="file:///C:/Users/MASTER/Documents/estudo/html-css/exercicios/ex010/index.html" target="_self">meu site piroca</a> <!--abre a janela no local atual sobrepondo nosso site--> <br>
+    <h3>esse link é meu ou dos outros?</h3>
+     <a href="file:///C:/Users/MASTER/Documents/estudo/html-css/exercicios/ex010/index.html" hreflang="self" rel="next">continue navegando no site</a> <br>
+     <a href="https://www.youtube.com/" hreflang="_blank" rel="external">youtube em nova janela</a> <br>
+     <a href="" hreflang="" rel="prev">parte anterior do documento</a> <br>
+     <a href="" hreflang="" rel="author">author do artigo atual</a> <br>
+     <a href="" hreflang="" rel="nofollow">link pago</a>
+     <!--tão aqui mais pra exemplo-->
+     <p>next, indiica link pra proxim aprte do documento atual</p> 
+     <p>prev, indica que o link é pra parte anterior do documento atual</p> 
+     <p>author, indica que leva pro site do author do site</p> 
+     <p>external, indica que é um link pra outro site que não fasz parte do atual</p> 
+     <p>nofollow, site não endossado, como um link pago<p>
+        <h4>link externo e interno</h4>
+        <p>link externo abaixo, é preciso todo o link ate o https</p>
+        <a href="https://www.youtube.com/" hreflang="blank" rel="external">youtube em nova janela</a> <br>
+        <p>link interno ou local, como leva a outra parte do nosso site não precisa ser completo</p>
+        <a href="index.html" hreflang="self" rel="next">continue navegando no site</a>
+
+        <h2>link pra baixar</h2>
+        <a href="quartopika.avif" download="quartopika" type="avif">imagem de quarto bonito</a>
+
+        <h1>sempre deixe _ no blank</h1>
+</body>
+</html>

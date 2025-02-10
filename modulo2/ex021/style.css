@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    font: normal normal 1em arial,helvetica,sans-serif;
+    background-color: #D4A6E0;
+    border: 10px solid black;
+    padding: 10px;
+    margin: 10px;
+    /*outiline se quiser*/
+}
+
+a {
+    color: #2004d4;
+}
+
+footer {
+    background-color: #e679d0;
+    color: black;
+    padding: 10px;
+    margin: 12px;
+}

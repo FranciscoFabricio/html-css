@@ -17,6 +17,7 @@
             text-align: center;
             vertical-align: middle;
             border: 1px solid black;
+            position: relative;
         }
 
         a {
@@ -32,15 +33,27 @@
             
         }
 
-        td.linha1 {
+        th.linha1 {
             background-color: #EAECF0;
             color: black;
             border: 1px solid black;
         }
+
         td {
             border: 1px solid black;
             padding: 5px;
             background-color: #F8F9FA;
+        }
+
+
+        tbody > tr :nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #EAECF0;
         }
 
         footer {
@@ -58,33 +71,33 @@
     <table>
         <thead>
             <tr class="negrito">
-                <td class="linha1">bandeira</td>
+                <th scope="col" class="linha1">bandeira</td>
 
-                <td class="linha1">Unidade <br> federativa</td>
+                <th scope="col" class="linha1">Unidade <br> federativa</td>
 
-                <td class="linha1"><a href=" https://pt.wikipedia.org/wiki/ISO_3166-2:BR" target="_blank">Abreviação</a></td>
+                <th scope="col" class="linha1"><a href=" https://pt.wikipedia.org/wiki/ISO_3166-2:BR" target="_blank">Abreviação</a></td>
 
-                <td class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_capitais_do_Brasil" target="_blank">Sede de governo</a></td>
+                <th scope="col" class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_capitais_do_Brasil" target="_blank">Sede de governo</a></td>
 
-                <td class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_%C3%A1rea" target="_blank">Área (km²)</a></td>
+                <th scope="col" class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_%C3%A1rea" target="_blank">Área (km²)</a></td>
 
-                <td class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">população</a> <a href="https://pt.wikipedia.org/wiki/Censo_2022">Censo (2022)</a></td>
+                <th scope="col" class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">população</a> <a href="https://pt.wikipedia.org/wiki/Censo_2022">Censo (2022)</a></td>
 
-                <td class="linha1">Densidade <br> (2005)</td>
+                <th scope="col" class="linha1">Densidade <br> (2005)</td>
 
-                <td class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_PIB" target="_blank">PIB</a> (2015)</td>
+                <th scope="col" class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_PIB" target="_blank">PIB</a> (2015)</td>
 
-                <td class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_participa%C3%A7%C3%A3o_no_PIB" target="_blank">(% total)</a> (2015)</td>
+                <th scope="col" class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_participa%C3%A7%C3%A3o_no_PIB" target="_blank">(% total)</a> (2015)</td>
 
-                <td class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_PIB_per_capita" target="_blank">PIB per capita (R$)</a> (2015)</td>
+                <th scope="col" class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_PIB_per_capita" target="_blank">PIB per capita (R$)</a> (2015)</td>
 
-                <td class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_IDH" target="_blank">IDH</a> (2010)</td>
+                <th scope="col" class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_IDH" target="_blank">IDH</a> (2010)</td>
 
-                <td class="linha1">Alfabetização (2016)</td>
+                <th scope="col" class="linha1">Alfabetização (2016)</td>
 
-                <td class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_mortalidade_infantil" target="_blank">Mortalidade infantil</a> (2016)</td>
+                <th scope="col" class="linha1"><a href="https://pt.wikipedia.org/wiki/Lista_de_estados_do_Brasil_por_mortalidade_infantil" target="_blank">Mortalidade infantil</a> (2016)</td>
 
-                <td class="linha1">Expectativa de vida (2016)</td>
+                <th scope="col" class="linha1">Expectativa de vida (2016)</td>
                 
             </tr>
            
@@ -620,10 +633,11 @@
                     <td>15,8‰</td>
                     <td>73,4 anos</td>
                 </tr>
+
+                
         </tbody>
 
         <tfoot>
-            <td></td>
         </tfoot>
     </table>
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mesclagem de tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            padding: 10px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        thead {
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">grupo</td>
+                <th scope="col">nomes</td>
+                <th colspan="4" scope="colgroup">filmes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3"><strong>mulheres</strong></td>
+                <td>maria</td>
+                <td>alien</td>
+                <td>rambo</td> 
+                <td>vingadores</td> 
+            </tr>
+            <tr>
+                <td>beatriz</td>
+                <td>hulk</td>
+                <td>inception</td>
+                <td>batman</td>
+            </tr>
+            <tr>
+                <td>claudia</td>
+                <td>oblivion</td>
+                <td>matrix</td>
+                <td>madmax</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3"><strong>homens</strong></td>
+                <td>daniel</td>
+                <td>intocaveis</td>
+                <td>amnesia</td> 
+                <td>300</td> 
+            </tr>
+            <tr>
+                <td>fabiano</td>
+                <td>wall-e</td>
+                <td>old boy</td>
+                <td>branquelas</td>
+            </tr>
+            <tr>
+                <td>bruno</td>
+                <td>star wars</td>
+                <td>taxi-driver</td>
+                <td>toy store</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">total</td>
+                <td>1000</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

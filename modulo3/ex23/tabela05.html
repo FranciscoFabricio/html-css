@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colgrup</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td, tr, th {
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        col.cnome {
+            background-color: yellowgreen;
+        }
+
+        col.cgrupo {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprofissão">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">nome</th>
+                <th scope="col">sexo</th>
+                <th scope="col">idade</th>
+                <th scope="col">profissão</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>jose</td>
+                <td>Masculino</td>
+                <td>44</td>
+                <td>Pedreiro</td>
+                
+                
+                
+            </tr>
+
+            <tr>
+                <td>antonio</td>
+                <td>Masculino</td>
+                <td>37</td>
+                <td>Agricultor</td>
+                
+                
+                
+                
+            </tr>
+
+            <tr>
+                <td>carlos</td>
+                <td>Masculino</td>
+                <td>22</td>
+                <td>Programador</td>
+                
+                
+            </tr>
+
+            <tr>
+                <td>juara</td>
+                <td>Macho</td>
+                <td>60</td>
+                <td>Heroi Aposentado</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -7,17 +7,31 @@
 }
 
 body {
-    background-color: aquamarine;
+    background-color: #193A51;
 }
 
 header > h1 {
-    background-color: lightgray;
+    background-color: #091F34;
+    color: #5188AE;
     text-align: center;
     padding: 10px;
 }
 
-menu {
+span#ico-burger {
+    background-color: #2D5471;
+    color: black;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#ico-burger:hover {
+    background-color: #1b3b52;
+}
+
+menu {
+    display: none;
 }
 
 menu > ul {
@@ -27,16 +41,16 @@ menu > ul {
 menu > ul > li > a {
     display: block;
     text-decoration: none;
-    background-color: rgb(187, 180, 180);
+    background-color: #2D5471;
     padding: 10px;
     text-align: center;
     margin: 15px;
     border-radius: 10px;
-    color: black;
+    color: white;
 }
 
 menu > ul > li > a:hover {
-    background-color: lightgray;
+    background-color: #3E6F8F;
     text-decoration: underline;
 }
 
@@ -44,7 +58,8 @@ main {
     width: 90vw;
     background-color: white;
     margin: auto;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 

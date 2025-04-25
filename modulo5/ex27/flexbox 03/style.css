@@ -8,12 +8,12 @@
 
 div.container {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap; /*flex-direction: row; flex-wrap: wrap;*/
     background-color: aqua;
+    
 }
 
 div.item {
-    flex: auto;
     border: 1px solid black;
     text-align: center;
     background-color: aquamarine;

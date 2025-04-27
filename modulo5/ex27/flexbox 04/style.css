@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 200px;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: aqua;
+}
+
+div.item {
+    border: 1px solid black;
+    text-align: center;
+    background-color: aquamarine;
+}

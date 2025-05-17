@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/*A paleta consiste em cores Semi escuro, Luz. Cores de destaque Chagall Green #008d62 e Mint Sprig #00986c. A paleta tem Legal temperatura de cores.
+A paleta paleta de color verde esmeralda tem uma combinação de cores de códigos de 5:
+HEX: #008259, RGB: (0, 130, 89); HEX: #008d62, RGB: (0, 141, 98); HEX: #00986c, RGB: (0, 152, 108)
+HEX: #2ca880, RGB: (44, 168, 128); HEX: #57bd9e, RGB: (87, 189, 158)*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -11,23 +16,49 @@ html, body {
     font-size: 1em;
     height: 100vh;
     width: 100vw;
-    background-color: #63783d;
+    background-color: #008259;
+}
+
+header {
+    background-color: #00986c;
+    color: black;
+    margin: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
     color: black;
     padding: 10px;
+    flex: 0 0 200px;
 }
 
-header {
-    background-color: #7FA653;
+header > nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+header > nav > a {
+    background-color: #2ca880;
+    text-decoration: none;
     color: black;
+    padding: 5px;
     margin: 5px;
-    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+header > nav a:hover {
+    background-color: #57bd9e;
+    transition-duration: background-color 0.5s;
 }
 
 main {
-    background-color: #CFEDBC;
-    margin: 5px;
-    padding: 5px;
+    background-color: #2ca880;
+    margin: 10px;
+    padding: 10px;
 }

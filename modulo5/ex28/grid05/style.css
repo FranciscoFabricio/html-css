@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+div.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+div.caixa1 {
+    background-color: aqua;
+    grid-row: 1 / span 2;
+    grid-column: 1 / 5;
+}
+
+div.caixa2 {
+    background-color: blueviolet;
+    grid-row: 2 / 5;
+    grid-column: -5 / -3;
+}
+
+div.caixa3 {
+    background-color: cadetblue;
+    grid-row: 2 / span 5;
+    grid-column: 3 / span 5;
+}
